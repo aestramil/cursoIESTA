@@ -1,0 +1,25 @@
+---
+title: "clase2_2708"
+author: "aestramil"
+date: "27 de agosto de 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r,echo = TRUE}
+#echo = FALSE hace que se oculte el codigo
+library(knitr)
+N=rpois(1,lambda = 90)
+x=runif(N)
+y=runif(N)
+```
+
+```{r nombredelchunk, echo = TRUE} 
+d=data.frame(x=x,y=y)
+s=summary(d)
+kable(s)
+#kable_styling(x_html, "striped", position = "left", font_size = 7)
+```
+
